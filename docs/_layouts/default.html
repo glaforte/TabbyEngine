@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>{{ page.title }}</title>
+            <meta charset="utf-8"> 
+            <!-- link to main stylesheet -->
+            <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css">
+        </head>
+        <body>
+            <div id="wrapper">
+                <div id="header_wrap">
+                    <div id="header">
+                        <div id="logo">
+                            <img src="{{ site.baseurl }}/assets/logo.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="topmenu_wrap">
+                    <div id="topmenu">
+                        <ul class="menu">
+                            <li><a href="{{ site.baseurl }}/index.html">Author</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="content-menu_wrap_bg">
+                    <div id="content-menu_wrap">
+                        <div id="leftmenu">
+                          {% for post in site.posts %}
+                            <li>
+                              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                            </li>
+                          {% endfor %}
+                        </div>
+                    </div>
+
+                    <div id="content-w2">
+                        <div id="item-page">
+                            <h2>{{ page.title }}</h2>
+                            {% if page.date %}
+                                <dd class="published">Published on {{ page.date | date: "%B %-d, %Y" }}.</dd>
+                            {% endif %}
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+                <div id="footer_wrap">
+                    <div id="footer">
+                        <a href="http://www.linkedin.com/in/guillaume-laforte">LinkedIn</a>
+                        <!-- <li><a href="mailto:guillaume.laforte@gmail.com">Email</a></li> -->
+                        <!-- <li><a href="https://github.com/glaforte">github.com/glaforte</a></li> -->
+                    </div>
+                </div>
+                <div id="push"></div>
+            </div>
+            <div id="copyright">
+                ©2015 Tabby Coder | <a href="http://www.hurricanemedia.net/">Designed by Hurricane Media</a>
+            </div>
+        </body>
+    </html>
