@@ -2,13 +2,13 @@
 layout: default
 title: Copy-on-Write Technique
 ---
-As an interesting challenge to discover more of the advanced C++ features, I've decided to work on multi-threading the Tabby Engine. The goal would be to have all the rendering elements done through a job-like engine, using only standard C++ features.
+As an interesting challenge to discover more of the advanced C++11 features, I've decided to work on multi-threading the Tabby Engine. The goal would be to have all the rendering elements done through a job-like engine and grealtly improve its CPU usage.
 
 <h3>Dual-Threaded Application Design</h3>
 
-Most of the multi-threaded 3D applications that I have worked with and developed in, have followed a dual thread system with a Main thread (or UI thread or Gameplay thread) and a Render thread. To me, that seems like a decent stepping stone to getting a more advanced multi-threaded application.
+Most of the multi-threaded 3D applications that I have worked with and developed in, have followed a dual-thread system with a Main thread (or UI thread or Gameplay thread) and a Render thread. To me, that seems like a decent stepping stone to developing a more advanced multi-threaded application.
 
-<h4>UI Thread Responsibilities</h4>
+<h4>Main Thread Responsibilities</h4>
 * Handle window events, mouse events, keyboard events.
 * Update assets.
 * Executes the draw-objective assets: filling up a scene draft that contains a raster item queue.
@@ -22,13 +22,13 @@ Most of the multi-threaded 3D applications that I have worked with and developed
 
 I've experienced few commonalities in the communication channel in various applications.
 
-At Eidos, using the Unreal Engine 3, the communication channel was a queue of operations. Both the UI thread and the Render thread would hold entire copies of the world and when the UI thread changed its copy of the world: it would add to the queue, a small structure describing the differences to apply. This felt more like a network protocol with an enumerated type and a set of structures were defined. The UI Thread would fill up the queue and the Render Thread read it as fast as it could. This method requires writing a lot of code and it duplicates a large amount of information between the two threads.
+At Eidos, using the Unreal Engine 3, the communication channel was a queue of operations. Both the Main thread and the Render thread would hold entire copies of the world and when the Main thread changed its copy of the world: it would add to the queue, a small structure describing the differences to apply. This felt more like a network protocol with an enumerated type and a set of structures were defined. The Main Thread would fill up the queue and the Render Thread read it as fast as it could. This method requires writing a lot of code and it duplicates a large amount of information between the two threads.
 
 <h4>Copy-on-Write Technique</h4>
-At CMLabs, we had success using the <a href='https://en.wikipedia.org/wiki/Copy-on-write'>Copy-on-write technique</a> for sharing structures, but we barely scratched their multi-threading potential. The advantage of this technique is that a static 3D structure can be shared without duplication between the UI thread and the Render Thread. Whenever the UI thread decides to modify a 3D structure, it clones it and can write to it without affecting the copy of the 3D structure currently held by the Render thread. A key needs to be added to all copy-on-write structures so that they can be matched after the cloning. In a future frame, when the Render thread receives the cloned 3D structure: it reads this key and can retrieve its matched DirectX cached data. This avoids re-allocating DirectX buffers. A draw-back of the Copy-on-write technique is that polymorphism is difficult to implement.
+At CMLabs, we had success using the <a href='https://en.wikipedia.org/wiki/Copy-on-write'>Copy-on-write technique</a> for sharing structures, but we barely scratched their multi-threading potential. The advantage of this technique is that a static 3D structure can be shared without duplication between the Main thread and the Render Thread. Whenever the Main thread decides to modify a 3D structure, it clones it and can write to it without affecting the copy of the 3D structure currently held by the Render thread. A key needs to be added to all copy-on-write structures so that they can be matched after the cloning. In a future frame, when the Render thread receives the cloned 3D structure: it reads this key and can retrieve its matched DirectX cached data. This avoids re-allocating DirectX buffers. A draw-back of the Copy-on-write technique is that polymorphism is difficult to implement.
 
 <h4>Copy-on-Write Structures</h4>
-In the Tabby Engine, I want to keep the assets as UI thread-only structures. They are quite tied with Qt and the Declarative UI elements. They're not great for a communication channel that includes cloning. Instead of holding on to their data as members, I've changed them to contain a copy-on-write reference to an equivalent data structure that belongs to a new, simple layer of data structure. The Hook data structures are meant to be used with the copy-on-write references and exchanged between threads.
+In the Tabby Engine, I want to keep the assets as Main thread-only structures. They are quite tied with Qt and the Declarative UI elements. They're not great for a communication channel that includes cloning. Instead of holding on to their data as members, I've changed them to contain a copy-on-write reference to an equivalent data structure that belongs to a new, simple layer of data structure. The Hook data structures are meant to be used with the copy-on-write references and exchanged between threads.
 
 <h3>Results</h3>
 
