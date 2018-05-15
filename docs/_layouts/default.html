@@ -18,15 +18,14 @@
 
                 <div id="topmenu_wrap">
                     <div id="topmenu">
-                        <ul class="menu">
-                            <li><a href="{{ site.baseurl }}/index.html">Author</a></li>
-                        </ul>
                     </div>
                 </div>
 
                 <div id="content-menu_wrap_bg">
                     <div id="content-menu_wrap">
                         <div id="leftmenu">
+                            <h3><a href="{{ site.baseurl }}/index.html">Author</a></h3>
+                            <hr/>
                           {% for post in site.posts %}
                             <li>
                               <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
