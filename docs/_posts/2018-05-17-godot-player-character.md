@@ -4,17 +4,14 @@ title: Godot - Player Character
 ---
 Continuing with my work on characters in <a href="https://godotengine.org/">Godot</a>, I've spent the last week working on interactions for the player character.
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I added new art assets that are more consistent with the look of the customizable characters. I added some player character actions. This creates a simple and growing village demo in <a href="https://twitter.com/hashtag/godotengine?src=hash&amp;ref_src=twsrc%5Etfw">#godotengine</a>.<a href="https://t.co/Szu73sCnoF">https://t.co/Szu73sCnoF</a> <a href="https://t.co/TjxK4R9W3w">pic.twitter.com/TjxK4R9W3w</a></p>&mdash; Guillaume Laforte (@GuillaumeLafor3) <a href="https://twitter.com/GuillaumeLafor3/status/997175613940293632?ref_src=twsrc%5Etfw">May 17, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <h3>Art Style</h3>
 As an aside, I've bought a first pack on the Unity Store from <a href="http://syntystudios.com/">Synty Studios</a>. I think the simple polygonal art-style will work well for my paper-doll characters. Adding the various trees and rocks helps quite a bit to fill the environment. Integrating the static meshes from <a href="http://syntystudios.com/">Synty Studios</a> through Blender and into Godot was straight-forward: no modifications were required in Blender, just import as FBX and re-export into COLLADA. In Godot, due to the restriction of my navigation structure, all the buildings and rocks were scaled to be 4 m^2 in the XZ-plane.
 
 <h3>Player Character Action</h3>
 This video shows the player character doing a few actions. The NPC can also be seen to be execute a 'move-to' action and a 'plant' action. I've rebuild the AI to use a new more scalable action system.
-
-<!--
-<video width="538" height="634" controls>
-  <source src="../../../assets/player_character_1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> -->
 
 <h4>Axe</h4>
 In the video, you can see the player character swinging an axe. Attaching a tool to the player character is done dynamically using the paper doll technology. I need to figure out a way to do this without having to change the PaperDoll class everytime I want to introduce a new tool!
