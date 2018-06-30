@@ -1,0 +1,20 @@
+---
+layout: default
+title: Godot - Rabbit
+---
+
+<h3>Rabbit</h3>
+I have integrated the Rabbit, its textures and its walk and idle animations. I bought this one from the Unity Store's <a href="https://assetstore.unity.com/publishers/16163">MalberS Animations</a>. I like this artists' work and the rabbit feels at home with the polygonal look'n'feel on the <a href="https://assetstore.unity.com/publishers/5217">Synty Studio</a>'s models!
+
+<img width='100%' src="../../../assets/godot-rabbit-1.PNG"/>
+
+Going through Blender again, there were few roadblocks to integrating the Assets meant for Unity. I used Gimp to convert the PSD files into the PNG file format. I introduced an extra Spatial in Godot to change the orientation of the rabbit model. This are minor issues that I was able to resolve fast, so integrating more animated assets might be in my future!
+
+<h4>Gameplay</h4>
+I've given the rabbit a very simple AI. I want to extend it further in the next weeks. Also, I've changed the player's UI so he can harvest the  rabbit and gain 1 meat. This was pretty straight-forward, but it makes me realize that if I wanted to integrate a wolf or another predator, I will need to introduce the idea of 'teams', as well as a health system.
+
+<h3>Terrain Generation</h3>
+I've implemented a simple heuristic to trigger the creation of new terrain tiles. Now, whenever the player character enters a tile, the Battlefield will check if this tile has all its neighbors created. Any missing tiles are promptly created.
+
+<h4>Optimization</h4>
+Adding 500 rabbits to the world took just a few lines of code, after last week's work on terrain generation. But 500 rabbits are way more expensive than 500 trees. I spent quite a few evenings, this week, optimizing my rough code. Before last week, since there were only a few actors moving in the world, I had the list of obstacles in one global vector. I've now changed it to be a 2D array within the TerrainTile class. This increases the memory consumption by about 32kB per tile, which is not dramatic. I also rewrote the path-finding algorithm to use sorted vectors for faster accesses.
