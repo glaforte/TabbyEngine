@@ -33,7 +33,7 @@ public:
     ~PerformanceMeasureBlock() {
         std::chrono::high_resolution_clock::duration duration = std::chrono::high_resolution_clock::now() - start;
         std::stringstream output_string;
-        output_string &lt;&lt; "[" &lt;&lt; block_name &lt;&lt; "] " &lt;&lt; (static_cast&lt;double>(duration.count()) / 1.0e6) &lt;&lt; "ms" &lt;&lt; std::endl;
+        output_string &lt;&lt; "[" &lt;&lt; block_name &lt;&lt; "] " &lt;&lt; (static_cast&lt;double&gt;(duration.count()) / 1.0e6) &lt;&lt; "ms" &lt;&lt; std::endl;
         OS::get_singleton()->print(output_string.str().c_str());
     }
 
