@@ -25,9 +25,9 @@ Here's a before and after shot. What do you think?
 <h4>Box Volume</h4>
 I have struggled quite a bit in the past month with the player movement. I knew that I would eventually have to give volume to the character mesh; so far, my mathematics had been assuming that the character was a particle in 3D. Researching on the Internet, I found that AABBs are the easiest way to tackle this problem.
 
-<img src="../../../assets/godot-voxels-16.PNG"/>
+<img src="../../../assets/godot-character-1.png"/>
 
-A quick glance at Godot's documentation and I confirmed that its AABB class and its Face3 classes have what I need: the triangle-AABB intersection function. Thanks Godot :)
+A quick glance at Godot's documentation and I confirmed that its AABB class and its Face3 classes have what I need: the triangle-AABB intersection function. Thanks Godot :) I use a smallest AABB than the real AABB of the character mesh because it gives better results when the character is on a cliff: you don't want to see the character's feet as hovering beyond the edge of the cliff.
 
 The other side of the problem: my current character movement code uses ray-casting that outputs the intersection point and the intersection normal. The intersection point is used to advance the position of the character and the intersection normal is used to slide the character when it hits a wall or ceiling. I tried various ways to emulate the intersection normal from the Triangle-AABB intersection, without success. One evening, while brushing the cat, I had a decent idea: I should change the character movement algorithm instead of fighting with the Triangle-AABB intersection code to output some overlap minimum translation vector. A few minutes of brainstorming later: I decided to split the movement into four parts that are evaluated independently.
 
