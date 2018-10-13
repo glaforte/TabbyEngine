@@ -14,7 +14,7 @@ There's a lot more work that I want to do to improve the terrain generation, inc
 <img src="../../../assets/godot-map-5.PNG"/>
 
 <h3>Underwater</h3>
-The addition of rivers was important to me, but I underestimated the effect it would have on my project. It affects most elements of the gameplay. What happens when the user wants to put a block of wood underwater? How can the player character jump over the river? What happens when a rabbit dives in the ocean? Where can I spawn the player's home with a guarantee to be above water? Turns out it is quite a bit of work to adapt everything into a decent package!
+The addition of rivers was important to me, but I underestimated the impact it would have on my project. It affects most elements of the gameplay. What happens when the user wants to put a block of wood underwater? How can the player character jump over the river? What happens when a rabbit dives in the ocean? Where can I spawn the player's home with a guarantee to be above water? Turns out it is quite a bit of work to adapt everything into a decent package!
 
 <h4>Underwater Camera</h4>
 I added code to detect when the player's camera went underwater. When that happens, I duplicate the World Environment and set it to the camera with some tweaks: I add fog and reduce the view distance considerably. This gives me a decent effect that tells the user quickly that he is underwater.
