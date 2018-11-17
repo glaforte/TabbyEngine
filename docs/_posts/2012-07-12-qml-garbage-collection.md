@@ -1,6 +1,6 @@
 ---
 layout: default
-title: QML Garbage Collection
+title: (QT) Qml Garbage Collection
 ---
 <p>I was investigating a strange destruction of my UI elements, yesterday. The UI that QML was automatically generating would simply stop appearing. That UI is used to modify the more complex rendering objects. I added a console output statement inside the JS loop that is populating the UI frame. After a few minutes of using the UI: it showed that the upgraded meta-object dictionary stopped to provide all the values that I had pushed into it, at the start of the application. These values are not used in the C++ code, after being pushed into the meta-object dictionary and they are meant to be accessible through the whole application lifetime.</p>
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Copy-on-Write Technique
+title: (3D) Copy-on-Write Technique
 ---
 As an interesting challenge to discover more of the advanced C++11 features, I've decided to work on multi-threading the Tabby Engine. The goal would be to have all the rendering elements done through a job-like engine and grealtly improve its CPU usage.
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Actor Collisions
+title: (Godot) Actor Collisions
 ---
 This blog post covers the past two weeks. Sadly, I caught a cold about 8 days ago and I've been recovering since last weekend. It saddens me that I will probably miss the last decent days for exercising outside of 2018. In my project, I've been working on the game design document and I've decided to take a tangent from my original project idea. I want to eventually build an history-based creative story, but I'm going to build a smaller project first. More details on this later!
 

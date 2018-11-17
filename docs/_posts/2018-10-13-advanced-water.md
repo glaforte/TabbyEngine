@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Advanced Water
+title: (Godot) Advanced Water
 ---
 This was a short week of work for me. The vacation of the past couple of weeks ended with a long week-end. I did some coding and some 3d modeling during the vacation, but mostly it was spending time with my family!
 

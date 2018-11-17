@@ -1,6 +1,6 @@
 ---
 layout: default
-title: OpenSceneGraph - First Impressions
+title: (3D) - OpenSceneGraph First Impressions
 ---
 <img src='../../../assets/osg64.png'><br>
 After a short stay at Eidos Montreal, I took some time off and worked on personal projects and business development. In October 2012, I joined <a href='https://www.cm-labs.com/'>CMLabs</a>, a small simulation company based in the Old Port of Montreal. CMLabs' main business are port, offshore simulators and reliable dynamics. Graphics are not CMLabs' money maker, so their investment in their graphics engine has been minimal, so far. Many years ago, they decided to use the <a href='http://www.openscenegraph.org'>OpenSceneGraph</a> library to get a step up. After a couple of months of using this rendering engine, here are my thoughts...

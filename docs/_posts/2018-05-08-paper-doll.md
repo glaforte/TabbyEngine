@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Paper Doll
+title: (Godot) Paper Doll
 ---
 Putting aside my thoughts on multi-threading, I've decided to prototype a paper doll for Godot. <a href="https://godotengine.org/">Godot</a> is a cool, light-weight game engine that's gaining in popularity, right now. Adding a paper doll to Godot will allow me to experiment with some character variety ideas that I have. <a href="https://www.mixamo.com">Mixamo</a> is a great place to start for animations and it offers two skinned characters that I think will be a great starting point for a stylized paper doll: XBot and YBot.
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Water Experiments
+title: (Godot) Water Experiments
 ---
 August is a nice month: you start harvesting fruits and vegetables from the garden, the temperature comes down to warm and I can go run outside during the day! It's too bad that the interns at work are going back to school, when they were starting to produce quality, though. At home, that gives me a small amount of free time to do fun coding. The past couple of weeks, I have been experimenting with adding a water surface to my Godot project.
 

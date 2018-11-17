@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Cooperative Gameplay
+title: (Godot) Cooperative Gameplay
 ---
 I enjoyed working outside quite a bit, this week! It started hot enough to move indoors and enjoy A/C in the afternoon. By the end of the week, I was working outside with a blanket on my knees. The temperature swing that we had this week is pretty crazy! I spent most of the week working on the cooperative gameplay module. I think I'm reaching an interesting level of completeness for the cooperative gameplay module. I also continued exploring some ideas in my voxel terrain engine.
 

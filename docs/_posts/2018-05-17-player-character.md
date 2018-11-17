@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Player Character
+title: (Godot) Player Character
 ---
 Continuing with my work on characters in <a href="https://godotengine.org/">Godot</a>, I've spent the last week working on interactions for the player character.
 

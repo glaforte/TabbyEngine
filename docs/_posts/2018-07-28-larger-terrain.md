@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Terrain Tiles II
+title: (Godot) Terrain Tiles II
 ---
 Today is a nice and cool day. The heat wave and the rainstorms that followed it seem to finally be behind us. I've been struggling with some coding challenges at work: fixing issues related to really old versions of Qt. This has given me little motivation to code at home, this month, but I did progress on improving my terrain in my Godot project.
 

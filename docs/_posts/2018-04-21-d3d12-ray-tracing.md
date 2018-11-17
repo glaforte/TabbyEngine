@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DxR - D3D12 RayTracing
+title: (3D) DxR - D3D12 RayTracing
 ---
 
 <h3>DxR - First Impressions</h3>

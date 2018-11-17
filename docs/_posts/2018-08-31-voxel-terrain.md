@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Voxel Terrain
+title: (Godot) Voxel Terrain
 ---
 Starting this week, I was back to working full-time on my personal Godot Engine project. I've made a short plan, looking a few months ahead. Working on this personal project is very rewarding after three months of dreadful software development in the medical device industry. My main goal for a couple of week is to scope a cooperative gameplay module. That's a cool project that I've never done before!
 

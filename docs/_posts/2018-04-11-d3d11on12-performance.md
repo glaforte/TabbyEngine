@@ -1,6 +1,6 @@
 ---
 layout: default
-title: D3D11on12 - First Impressions
+title: (3D) D3D11on12 - First Impressions
 ---
 Recently, I've been upgrading the Tabby Engine to catch up on the latest technologies. My goal is eventually to complete a rendering pipeline that uses the new DirectX RayTracing technology, recently at GDC 2018 by Microsoft.
 

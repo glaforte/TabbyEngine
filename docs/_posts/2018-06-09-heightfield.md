@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Heightfield
+title: (Godot) Heightfield
 ---
 Another hard week at work. I find it surprising how little the company that I joined, cares about on-boarding new employees. Well, this means I'm even more dedicated to continuing improving my game prototype.
 

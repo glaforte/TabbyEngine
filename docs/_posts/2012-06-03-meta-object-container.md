@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Meta-Object Container
+title: (QT) Meta-Object Container
 ---
 <p>We started using Qt, at Feeling Software, in February 2009. I present
  to you two classes that we added to the framework very early on: the 

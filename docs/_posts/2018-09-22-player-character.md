@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Player Character II
+title: (Godot) Player Character II
 ---
 This week has been very challenging, technically. I started the week smoothly by linking the creative module with the inventory, and adding more block materials. Then, I decided to tackle camera controls and player movements. Last week, I was able to make a simple structure, but my old camera controls made it impossible to build ceilings. Also, it was too easy for the camera and the player mesh to be placed inside a block. I've made some nice progress to reduce these issues and that's the topic for this week!
 

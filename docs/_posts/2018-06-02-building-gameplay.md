@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Building Gameplay
+title: (Godot) Building Gameplay
 ---
 It's been a beautiful sunny week here. After a few months of rest at home, I can honestly say it is hard to go to work. I've been unfocused on my Godot project, but I was able to introduce some new gameplay and AI improvements.
 

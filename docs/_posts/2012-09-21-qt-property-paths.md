@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qt Property Paths
+title: (QT) Property Paths
 ---
 All half-decent 3D scene editors need an object property browser. I've discussed using QML and meta-programming concepts to simplify the coding of a property browser before, in this post. More recently, I've upgraded my property browser with a new idea: showing the properties of sub-objects. While coding that: I managed to simplify the QML code by re-hashing an my earlier adaptation of QML property paths.
 

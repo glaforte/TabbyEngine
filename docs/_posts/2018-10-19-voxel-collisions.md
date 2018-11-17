@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Voxel Collisions
+title: (Godot) Voxel Collisions
 ---
 This week was a mixed week. I went to see a play at the <a href="https://centaurtheatre.com/">Montreal Centaur Theatre</a>: <a href="https://centaurtheatre.com/choir-boy.html">Choir Boy</a>. It was an entertaining, if confusing play! That's also how my week felt. I was productive, but I questioned the targets that I wanted to achieve. Rather than advance further on adding gameplay elements, I reviewed the feedback that I received from my last test session and focused on it. I've been told to focus on fewer elements, but to make sure that they are well-done, so I'm taking this advice :)
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Qt Shared Pointers
+title: (QT) Shared Pointers
 ---
 As a part of the Tabby Engine project, I have been reviewing how to do multi-threaded rendering. In my design: I've been feeling the need for a simpler memory tracking technique.
 

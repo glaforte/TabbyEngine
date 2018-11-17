@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Inventory
+title: (Godot) Inventory
 ---
 I'm happy to say that I'm once again, gainfully employed. The project that I will be working is very interesting and is not related to graphics nor video games. This will reduce the time that I have to play around with Godot and other technologies. I will keep this blog alive, showing off small improvements and ideas. I spent the last week trying out the UI facilities in Godot as well as the database concepts that it offers.
 

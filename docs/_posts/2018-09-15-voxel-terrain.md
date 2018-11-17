@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Voxel Terrain II
+title: (Godot) Voxel Terrain II
 ---
 This week flew-by fast! I started the week with a short play-test with my husband. It is a unique feeling to show off this project to my family. The cooperative module worked great and we were in a multiplayer session within the first minute. Our first play-test was short, but I wrote down all his feedback: the showstopper bugs, the small annoyances and the feature requests! I spent about half my week addressing these issues.
 

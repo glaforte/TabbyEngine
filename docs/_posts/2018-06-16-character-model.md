@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blender - Character Update
+title: (Blender) Character Update
 ---
 Last week-end, I was writing down some ideas for small progress and improving the character came up on top. I've been using a version of the Mixamo Y-Bot that I split apart a few months ago. It provided the flexibility that I wanted, but looked somewhat insect-like and did not fit the polygonal-look of the other assets, because of its smoothness.
 

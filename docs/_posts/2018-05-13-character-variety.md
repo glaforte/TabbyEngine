@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Character Variety
+title: (Godot) Character Variety
 ---
 Following <a href='http://www.tabbycoder.com/2018/05/08/godot-paper-doll.html'>my previous post</a> on 3d paper dolls in <a href="https://godotengine.org/">Godot</a>, I've expanded my prototype with some interesting results, in terms of simple character variety and integrating more <a href="https://www.mixamo.com">Mixamo</a> animations.
 

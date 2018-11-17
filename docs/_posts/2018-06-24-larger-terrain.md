@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Godot - Terrain Tiles
+title: (Godot) Terrain Tiles
 ---
 Today is Quebec's national holiday. It's a great day for some fun coding! I've been pondering some exploration gameplay and I decided to work on further expansions of the terrain, this week.
 
